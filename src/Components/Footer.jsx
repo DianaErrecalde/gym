@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 
 const Footer = () => {
     return (
-        <div>
-            
+        <div style={{border: "1px solid black", width: "100%"}}>
+            RELLENAR EL FOOTER
         </div>
     );
 };
