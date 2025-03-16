@@ -13,7 +13,6 @@ export const listarEjercicios = async () => {
  * 
  * @param {String} nombre nombre del ejercicio a actualizar
  * @param {Boolean} enDesuso esta o no en en desuso
- * @returns nada
  */
 export const cambiarEstadoEjercicio = async (nombre, enDesuso) => {
     return await putData(`/ejercicios?nombre=${nombre}&enDesuso=${enDesuso}`);
