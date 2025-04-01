@@ -17,3 +17,12 @@ export const listarEjercicios = async () => {
 export const cambiarEstadoEjercicio = async (nombre, enDesuso) => {
     return await putData(`/ejercicios?nombre=${nombre}&enDesuso=${enDesuso}`);
 }
+
+/**
+ * 
+ * @param {String} nombre 
+ * @returns crea un nuevo ejercicio en la base de datos
+ */
+export const agregarEjercicio = async (nombreNuevo) => {
+    return await postData('/ejercicios', { nombre : nombreNuevo });
+}
